@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f83b8ed06e.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+
+    <!--header-->
+
+    <header>
+        <div class="logo">
+            <p><span>Modern</span>Agency</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#about_us">A Propos</a></li>
+            <li><a href="#presta">Prestation</a></li>
+            <li><a href="#realisation">Réalisation</a></li>
+            <li><a href="#comment_section">Avis</a></li>
+        </ul>
+        
+           <!--menu responsive-->
+    <div class="toggle_menu"></div>
+    </header>
+
+
+    <!--section home-->
+
+    <section id="home">
+        <div class="left">
+            <h4>Bienvenue</h4>
+            <h1>VOTRE SITE PRET SOUS 48H</h1>
+            <p>Des solutions digitales pour votre succès</p>
+            <button><a href="#"><i class="fa-brands fa-whatsapp"></i> Contactez-Nous</a></button>
+        </div>
+        <div class="right">
+            <img src="vr_image/138358595228.png" alt="">
+        </div>
+    </section>
+
+
+    <!--qui somme nous ?-->
+
+    <section id="about_us">
+        <h4 class="mini_title">QUI SOMME NOUS ?</h4>
+        <h2 class="title"></h2>
+        <div class="about">
+            <div class="left">
+                <h3>C'est nous les meilleurs</h3>
+                <p>Alors choisisser la qualité<br></p>
+                <p>choisisser les bonnes personnes</p>
+                <button><a href="#">Plus D'information</a></button>
+            </div>
+            <div class="right">
+                <img src="vr_image/it-01.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--section prestation-->
+
+    <section id="presta">
+        <h4 class="mini_title">PACK CONCEPTION ...</h4>
+        <h2 class="title">avec notre Vision</h2>
+        <div class="dishes">
+            <div class="dish">
+                <p>BASIC PACK</p>
+                <hr class="zig">
+                <hr class="zag">
+                <h2>599<span>€</span></h2>
+                <ul>
+                    <li>Site Web complet</li>
+                    <li>Mini pack design (logo)</li>
+                    <li>1 nom de domaine inclus</li>
+                    <li>Livraison de 5-7 jours</li>
+                    <li>1 révision offerte</li>
+                </ul>
+                <a href="#">+ Acheter</a>
+            </div>
+            <div class="dish2">
+                <p>PREMIUM PACK</p>
+                <hr class="zig">
+                <hr class="zag">
+                <h2>799<span>€</span></h2>
+                <ul>
+                    <li>Site Web complet</li>
+                    <li>Mini pack design (logo)</li>
+                    <li>1 nom de domaine inclus</li>
+                    <li>Livraison de 5-7 jours</li>
+                    <li>Landing Page</li>
+                    <li>Options complémentaires</li>
+                    <li>3 révision offerte</li>
+                </ul>
+                <a href="#">+ Acheter</a>
+            </div>
+            <div class="dish">
+                <p>SITE SUR MESURE (DEVIS)</p>
+                <hr class="zig">
+                <hr class="zag">
+                <ul>
+                    <li class="liste_sur_mesure" >Site complet sur mesure</li>
+                    <li>Nom de domaine inclus</li>
+                    <li>Boite mail personnalisé</li>
+                    <li>Options sur mesure</li>
+                </ul>
+                <a href="#">+ Acheter</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Réalisation-->
+
+    <section id="realisation">
+        <h4 class="mini_title">Nos Réalisation Antérieur</h4>
+        <h2 class="title">POURQUOI NOUS ?</h2>
+        <p></p>
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="vr_image/1674555-kylian-mbappe-le-1er-mai-2024.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="vr_image/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="vr_image/kylian-mbappe-2324-662a34aea984e.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="vr_image/MBAPPE.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },5000);
+        </script>
+    </section>
+
+    <!-- section comments -->
+    
+    <section id="comment_section">
+        <h4 class="mini_title">Commentaires</h4>
+        <h2 class="title"> QU'EST-CE QUE LES GENS DISENT DE NOUS</h2>
+        <div class="comments">
+            <div class="comment">
+                <div>
+                    <img src="vr_image/Logo modern agency.png">
+                    <h4>Kevin Hitten</h4>
+                </div>
+                <p>Son Avis</p>
+            </div>
+            <div class="comment">
+                <div>
+                    <img src="vr_image/Logo modern agency.png">
+                    <h4>Hajj Kimiri</h4>
+                </div>
+                <p>Son Avis</p>
+            </div>
+            <div class="comment">
+                <div>
+                    <img src="vr_image/Logo modern agency.png">
+                    <h4>Jacques</h4>
+                </div>
+                <p>Son Avis</p>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <ul class="menu_footer">
+            <li><a href="#">CGV</a></li>
+            <li><a href="#">MENTIONS LEGALES</a></li>
+            <li><a href="#">POLITIQUE DE RETOUR</a></li>
+        </ul>
+
+    <!--menu responsive footer -->
+    <div class="toggle_menu_footer"></div>
+
+        <div class="socialIcons">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp"></i></i></a>
+        </div>
+        <hr>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">MIRADA Eliot</span></p>
+        </div>
+    </footer>
+
+    <script>
+        var small_menu = document.querySelector('.toggle_menu')
+        var menu = document.querySelector('.menu')
+
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+ <script>
+    var small_menu_footer = document.querySelector('.toggle_menu_footer');
+    var menu_footer = document.querySelector('.menu_footer');
+
+    small_menu_footer.onclick = function(){
+        small_menu_footer.classList.toggle('active');
+        menu_footer.classList.toggle('responsive');
+    }
+</script>
+</body>
+</html>
